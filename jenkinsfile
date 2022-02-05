@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Cloning Git') {
+            steps {
+                git 'https://github.com/Fatimababady/tpjenkins'
+            }
+        }
+        
+    
+        stage ('bluid') {
+        steps {
+            script{
+                
+            echo "etape du bluild"
+        }
+        }
+    }
+}
+}
